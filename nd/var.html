@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --varisvar:black;
+            --height1:100px;
+            --height2:100px;
+            --width1:200px;
+            --width2:400px;
+            --color1:rgb(26, 92, 224);
+            --color2:lightblue;
+            --width3:100%;
+            --dis:inline-block;
+            --mar:20px;
+            --br:50%;
+            --color3:rgb(216, 27, 103);
+            --mar2:190px;
+        }
+        .divbox{
+            background-color: var(--varisvar);
+            width: 500px;
+            height: 500px;
+        }
+        
+        .b1{
+            height: var(--height1);
+            width: var(--width1);
+            background-color:var(--color1);
+            display: var(--dis);
+            margin: var(--mar);
+        }
+        .rec{
+            background-color: var(--color2);
+            width: var(--width2);
+            height: var(--height2);
+            margin: var(--mar);
+        }
+        .cir{
+            height: var(--height1);
+            width: var(--height1);
+            background-color: var(--color3);
+            border-radius: var(--br);
+            margin-left:  var(--mar2);
+        }
+    </style>
+</head>
+<body>
+    <div class="divbox">
+        <div class="b">
+        <div class="b1"></div>
+      <div class="b1"></div>
+      </div>
+      <div class="rec"></div>
+      <div class="cir"></div>
+    </div>
+</body>
+</html>
