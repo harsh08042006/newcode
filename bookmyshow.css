@@ -1,0 +1,148 @@
+.nav{
+    display: flex;
+    height: 70px;
+    width: 100pv;
+    
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.ser{
+    display: flex;
+    justify-content:space-evenly;
+    width: 600px;
+    height: 50px;
+    align-items: center;
+    margin: 5px;    
+}
+.img{
+    background-image: url("/book.png");
+    background-size: cover;
+    height: 60px;
+    width: 110px;
+
+}
+.ser1{
+    width: 430px;
+    height:40px;
+    border: 2px solid;
+    border-radius: 30px;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.down{
+    height: 30px;
+    width: 70px;
+
+    
+
+}
+.signup{
+    height: 30px;
+    width: 70px;
+    border: 2px solid;
+    text-align: center;
+    background-color: red;
+    color: white;
+
+}
+.other{
+    height:30px ;
+    width: 30px;
+    border: 2px solid;
+}
+.menu1{
+    display: flex;
+    width: 100pv;
+    height: 70px;
+    
+    justify-content: space-evenly;
+}
+.half1{
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:10px; 
+}
+.half2{
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+
+}
+.op{
+    height: 30px;
+    width: 50px;
+    
+    
+}
+.dis{
+    width: 100%;
+    height: 400px;
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    width:900px;
+    height: 400px;
+    border: 2px solid;
+    border-radius: 2%;
+    background-image: url(/spd.jpg);
+    background-size: cover;
+}
+.movies{
+    margin: 30px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.banner{
+    width: 250px;
+    height: 400px;
+    border: 2px solid;
+    border-radius: 5%;
+}
+.cur{
+    width: 1200px;
+    height: 100px;
+    border: 2px solid;
+    margin-top: 40px;
+    margin-left: 250px;
+    border-radius: 40px;
+}
+.movies1{
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    
+}
+.banner1{
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 5%;
+}
+
