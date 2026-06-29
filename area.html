@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .cont{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    grid-template-areas: 
+    "kashmir kashmir Mp Mp"
+    "kashmir kashmir Mp Mp"
+    "rajasthan rajasthan rajasthan rajasthan"
+    "bihar bihar uttrakhand uttrakhand";
+    gap: 10px;
+  }
+  .k{
+    grid-area: kashmir;
+    background-color: red;
+
+  }
+  .m{
+    grid-area: Mp;
+    background-color: orange;
+  }
+  .r{
+    grid-area: rajasthan;
+    background-color:navajowhite
+  }
+  .b{
+    grid-area: bihar;
+    background-color: aqua;
+  }
+  .ut{
+    grid-area: uttrakhand;
+    background-color: bisque;
+  }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="k"></div>
+        <div class="m"></div>
+        <div class="r"></div>
+        <div class="b"></div>
+        <div class="ut"></div>
+    </div>
+</body>
+</html>

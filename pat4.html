@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .cont{
+    display: grid;
+    grid-template-columns:repeat(4,100px);
+    grid-template-rows: repeat(6,100px);
+    gap: 10px;
+
+   
+    
+   }
+   .sb{
+    background-color: blue;
+    grid-row: 1/7;
+    grid-column: 1/2;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .nav{
+    grid-column: 2/5;
+    
+     background-color: cadetblue;   }
+    .div1{
+      background-color: cyan;
+      
+     }
+     .sp{
+        grid-column: 2/4;
+        grid-row: 3/6;
+        background-color: aquamarine;
+     }
+     .ta{background-color: magenta;
+    grid-row: 3/6;}
+    .wid{
+        background-color: lightskyblue;
+    }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="sb">Sidebar</div>
+        <div class="nav"></div>
+        <div class="div1"></div>
+        <div class="div1"></div>
+        <div class="div1"></div>
+        
+        
+          <div class="sp"></div>
+          <div class="ta"></div>
+           <div class="wid"></div>
+            <div class="wid"></div>
+          <div class="wid"></div>
+    </div>
+</body>
+</html>
