@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 class="h">my name is harsh</h1>
+    <h1 class="h" id="h1">my name is harsh</h1>
+    <h1 class="h" id="h2">my name is harsh</h1>
+    <h1 class="h">my name is harsh</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quas perferendis ut sunt obcaecati voluptates eaque in nam assumenda quia temporibus aliquam dolorum nesciunt expedita ex, laborum, id suscipit ipsam?</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quas perferendis ut sunt obcaecati voluptates eaque in nam assumenda quia temporibus aliquam dolorum nesciunt expedita ex, laborum, id suscipit ipsam?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quas perferendis ut sunt obcaecati voluptates eaque in nam assumenda quia temporibus aliquam dolorum nesciunt expedita ex, laborum, id suscipit ipsam?</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quas perferendis ut sunt obcaecati voluptates eaque in nam assumenda quia temporibus aliquam dolorum nesciunt expedita ex, laborum, id suscipit ipsam?</p> -->
+     <div> 
+     <div class="box" id="b1"></div>
+      <div class="box" id="b2"></div>
+     <div class="box" id="b3"></div>
+     <div class="box" id="b4"></div></div>
+    <script>
+    // console.dir(document);
+    // document.body.innerText="I am a goat";
+    // let head=document.querySelectorAll('.h');
+    // head.forEach(element => {
+    //     element.style.color="red";
+    // })
+    // document.querySelector('#h1').style.backgroundColor='blue';
+    //  document.querySelector('#h2').style.backgroundColor='blue';
+
+    // let para= document.querySelectorAll('p');
+    //   para.forEach(ele=>{
+    //     ele.style.color="pink";
+    //   })
+
+      let boxes=document.querySelectorAll('.box');
+      boxes.forEach((ele)=>{
+        ele.style.height= "100px";
+        ele.style.width="100px";
+        ele.style.position="absoulute";
+      })
+      document.getElementById('b1').style.backgroundColor="blue"; 
+      document.getElementById('b2').style.backgroundColor="red";
+      document.getElementById('b3').style.backgroundColor="green";
+      document.getElementById('b4').style.backgroundColor="yellow";
+      document.getElementById('b1').style.left='0';
+      document.getElementById('b1').style.top='0';
+      document.getElementById('b1').style.left='0';
+
+
+     
+
+
+    </script>
+</body>
+</html>

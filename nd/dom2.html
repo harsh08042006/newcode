@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image1{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- //keydownevent -->
+    <div class="image1"></div>
+    <script>
+let div=document.querySelector(".image1");
+let topv=0;
+let down=0;
+let right=0;
+let left=0;
+   document.addEventListener('keydown',(event)=>{
+    let key=event.key;
+    if(key=='ArrowUp'){
+        topv-=100;
+        div.style.top=topv+'px';
+    }
+    else if(key=='ArrowDown'){
+        topv+=100;
+        div.style.top=topv+'px';
+    }
+   else  if(key=='ArrowRight'){
+        right+=100;
+        div.style.left=right+'px';
+    }
+     else  if(key=='ArrowLeft'){
+        right-=100;
+        div.style.left=right+'px';
+    }
+   })
+    </script>
+</body>
+</html>

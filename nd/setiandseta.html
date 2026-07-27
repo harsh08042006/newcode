@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        .second{
+            background-color:blue;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="/bp.jpg" alt="" class="img"> -->
+    <div class="first"></div>
+    
+    <script>
+    //  let i1=document.querySelector(".img");
+    //  setInterval(()=>{
+    //     i1.setAttribute('src','/bt.jpg');
+    //  },2000);
+    //   setInterval(()=>{
+    //     i1.setAttribute('src','/bp.jpg');
+    //  },4000);
+     let box=document.querySelector(".first");
+        setInterval(()=>{
+            box.classList.toggle("second");
+        },100)
+//
+        
+
+    </script>
+</body>
+</html>

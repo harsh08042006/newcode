@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <script>
+  function draw(event){
+     let div1=document.createElement('div');
+            
+            document.body.appendChild(div1);
+            div1.classList.add("container");
+            div1.style.left=event.clientX +'px';
+            div1.style.top=event.clientY +'px'
+  }
+  function stop1(event){
+ document.removeEventListener('mousemove',draw);
+  }
+  function start(event){
+document.addEventListener('mousemove',draw);
+  }
+   document.addEventListener('mousedown',start)
+
+   document.addEventListener('mouseup',stop1)
+    </script>
+</body>
+</html>

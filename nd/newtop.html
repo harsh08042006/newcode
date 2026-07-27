@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+         background-color:red ;
+       height: 30px;
+       width: 30px;
+         position: absolute;
+
+        }
+        .container1{
+         background-color:white ;
+       height: 30px;
+       width: 30px;
+         position: absolute;
+
+        }
+        .canvas{
+            height: 1000px;
+            width: 1000px;
+            border: 2px solid;
+        }
+        .but{
+            height: 50px;
+        width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container"></div> -->
+    <!-- <button id="in">increase</button>
+    <button id="de">decrease</button>
+    <button id="re">reset</button> -->
+    <div class="but">
+    <button class="brush">Color</button>
+    <button class="eraser">Eraser</button></div>
+    <div class="canvas"></div>
+    <script>
+        // let butn=document.querySelector("#in");
+        // let butn1=document.querySelector("#de");
+        // let butn3=document.querySelector("#re");
+        // let cont=document.querySelector(".container");
+        // count=0;
+        // butn.addEventListener('click',()=>{
+        //        count++;
+        //        cont.innerText=count;
+        // })
+        // butn1.addEventListener('click',()=>{
+        //     if(count>0){   
+        //     count--;}
+        //        cont.innerText=count;
+        // })
+        // butn3.addEventListener('click',()=>{
+        //        count=0;
+        //        cont.innerText=count;
+        // })
+        //  document.addEventListener('mousemove',(event)=>{
+                // cont.style.left=event.clientX +"px";
+                // cont.style.top=event.clientY +"px"
+        //        cont.innerText="x:"+event.clientX+"px";
+
+        //  })
+        function draw(event){
+             let div1=document.createElement('div');
+            let can=document.querySelector(".canvas");
+              can.appendChild(div1);
+            div1.classList.add(".container");
+            div1.style.left=event.offsetX +'px';
+            div1.style.top=event.offsetY +'px'
+          
+        }
+       let col=document.querySelector(".brush");
+       col.addEventListener('click',()=>{ 
+       document.querySelector(".canvas").addEventListener('mousemove',draw)})
+    let eras=document.querySelector(".eraser");
+    eras.addEventListener('click',()=>{
+           document.removeEventListener('mousemove',draw)
+    }
+        
+)
+
+
+    </script>
+</body>
+</html>
